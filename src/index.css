@@ -25,9 +25,19 @@
 h1{
   font-family: 'Waterfall', cursive;
   font-size: xx-large;
+  color: #6E4618;
+  z-index: 10;
 }
 
 h2{
   font-family: 'Playfair Display', serif;
   font-size: x-large;
+  color: #6E4618;
+  z-index: 10;
+}
+p{
+  font-family: 'Playfair Display', serif;
+  font-size: x-large;
+  color: #7E5628;
+  z-index: 10;
 }
