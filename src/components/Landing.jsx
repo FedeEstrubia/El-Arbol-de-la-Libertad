@@ -2,6 +2,23 @@ import { motion } from "framer-motion";
 import ReactPlayer from "react-player/youtube";
 
 export default function App() {
+  const creditos = [
+    "ALOIS TABERNIG - josé peró",
+    "MAGDALENA MORITZ - ana weidmann",
+    "SACERDOTE - lucas brega",
+    "JUGLAR / CANTINERO DE FONDA RONCHETTI - maximiliano rodriguez",
+    "MADRE DE MAGDALENA - lucia morandin",
+    "PADRASTRO MAGDALENA - santiago antonioli",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+  ];
+
   return (
     <div className="flex flex-col justify-start items-center w-full h-screen">
       <img
@@ -110,7 +127,7 @@ export default function App() {
           viewport={{ once: true }}
           className="text-5xl sm:text-6xl lg:text-8xl"
         >
-          Idea, Libreto, Dirección y Producción:
+          Idea, Investigación, Libreto, Dirección y Producción:
         </motion.h1>
         <motion.p
           initial={{ scale: 0 }}
@@ -128,143 +145,23 @@ export default function App() {
           viewport={{ once: true }}
           className="mt-4 sm:mt-12 text-6xl sm:text-7xl lg:text-8xl"
         >
-          Actores:
+          Elenco:
         </motion.h1>
-        <motion.p
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
-          viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >
-          Alois Tabernig - Jose Pero
-        </motion.p>
-        <motion.p
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
-          viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >
-          Magdalena Moritz - Ana Weidmann
-        </motion.p>
-        <motion.p
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
-          viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >
-          Sacerdote - Lucas Brega
-        </motion.p>
-        <motion.p
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
-          viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >
-          Juiglar - Maximiliano Rodriguez
-        </motion.p>
-        <motion.p
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
-          viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >
-          Madre de Magdalena - Lucia Morandin
-        </motion.p>
-        <motion.p
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
-          viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >
-          Padrastro Magdalena - Santiago Antonioli
-        </motion.p>
-        <motion.p
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
-          viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >
-          Alma de Alois - César Spais
-        </motion.p>
-        <motion.p
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
-          viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >
-          Alma de Magdalena - Liliana Monai
-        </motion.p>
-        <motion.p
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
-          viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >
-          Otto , amigo de Alois
-        </motion.p>
-        <motion.p
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
-          viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >
-          Lucia Weltimann Cazador
-        </motion.p>
-        <motion.p
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
-          viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >
-          Franco Van de Velde{" "}
-        </motion.p>
-        <motion.p
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
-          viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >
-          Cantinera - Marianela Quiroz
-        </motion.p>
-        <motion.p
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
-          viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >
-          Hijas de Alois - Magdalena Grazioli Y Juana Borgogno
-        </motion.p>
-        <motion.p
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
-          viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >
-          Pastor protestante: Gustavo frei
-        </motion.p>
-        <motion.p
-          initial={{ scale: 0 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
-          viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >
-          Colonos de Esreranza: miembros Asociación Alemana de Esperanza
-        </motion.p>
+        {creditos.map((item, index) => {
+        return (
+          <motion.p
+          key={index}
+            initial={{ scale: 0 }}
+            whileInView={{ scale: 1 }}
+            transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+            viewport={{ once: true }}
+            className="text-[1.2rem] lg:text-3xl"
+          >
+            {item}
+          </motion.p>
+        );
+      })}
+        
         <motion.h1
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
@@ -310,7 +207,9 @@ export default function App() {
         <div
           className={`flex flex-col justify-center items-center backdrop-blur-sm pt-2 pb-2 border-x-2 border-[#806040] lg:border-t-2 lg:border-[#806040] w-screen gap-1 z-20`}
         >
-          <p className={`flex justify-center items-center text-base lg:text-xl font-regular text-[#503010]`}>
+          <p
+            className={`flex justify-center items-center text-base lg:text-xl font-regular text-[#503010]`}
+          >
             Desarrollado por&nbsp;
             <motion.p
               whileHover={{ scale: 0.98 }}
