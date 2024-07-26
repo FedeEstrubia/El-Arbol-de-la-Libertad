@@ -2,21 +2,56 @@ import { motion } from "framer-motion";
 import ReactPlayer from "react-player/youtube";
 
 export default function App() {
-  const creditos = [
-    "ALOIS TABERNIG - josé peró",
-    "MAGDALENA MORITZ - ana weidmann",
-    "SACERDOTE - lucas brega",
-    "JUGLAR / CANTINERO DE FONDA RONCHETTI - maximiliano rodriguez",
-    "MADRE DE MAGDALENA - lucia morandin",
-    "PADRASTRO MAGDALENA - santiago antonioli",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
+  const elenco = [
+    "JOSÉ PERÓ - Alois Tabernig",
+    "ANA WEIDMANN - Magdalena Moritz - ",
+    "LUCAS BREGA - Sacerdote",
+    "MAXIMILIANO RODRIGUEZ - Juglar / Cantinero de Fonda Ronchetti",
+    "LUCIA MORANDIN - Madre de Magdalena",
+    "SANTIAGO ANTONIOLI - Padrastro de Magdalena",
+    "CÉSAR SPAIS - Alma de Alois",
+    "LILIANA MONAI - Alma de Magdalena",
+    "HECTOR RECCE - Otto, Amigo de Alois",
+    "LUCÍA WEIDMANN - Amiga de Magdalena",
+    "FRANCO VAN DE VELDE - Cazador",
+    "MARIANELA QUIROZ - Cantinera",
+    "MAGDALENA GRAZIOLI Y JUANA BORGOGNO - Hijas de Alois",
+    "GUSTAVO FREI - Pastor Protestante",
+  ];
+  const bandaMunicipal = [
+    "MARCO BERTOSSI",
+    "LUIS NADALUTTI",
+    "JULIAN THELER",
+    "EDUARDO MORANDIN",
+  ];
+  const musica = [
+    "Letra y Música - CESAR SPAIS",
+    "Soprano - LILIANA MONAI",
+    "Tenor - CESAR SPAIS",
+    "Teclados - EDUARDO RETAMAR",
+    "Violonchelo - DELFINA SPAIS",
+    "Guitarra - CESAR SPAIS",
+    "Técnico de Sonido, Edición y Compaginacion - EDUARDO RETAMAR",
+  ];
+  const vocesOff = [
+    "DANISA GARNERO",
+    "LILIANA ISLAN",
+    "MAXIMILIANO RODRÍGUEZ",
+    "CLAUDIA GANDINO",
+    "ROBERTO MASSI",
+  ];
+
+  const agradecimiento = [
+    "Intendente Municipal, Sr.Rodrigo Muller ",
+    "Secretaria de Cultura, Melania Rein",
+    "Secretaría de Ambiente y Servicios Publicos",
+    "Museo de la Colonización",
+    "Bar Nueva Royal",
+    "Asociación Alemana",
+    "Agrupación Coral Esperanza",
+    "Celina Zimmermann",
+    "Club Social",
+    "Rodrigo Bilbao",
   ];
 
   return (
@@ -83,7 +118,7 @@ export default function App() {
             type: "spring",
             ease: "easeInOut",
           }}
-          className="hidden p-4 text-2xl sm:w-[15%] sm:h-[5rem]  sm:text-2xl bg-[#6E4618] z-20 rounded-[5rem] shrink-0"
+          className="hidden p-4 text-2xl sm:w-[15%] sm:h-[5rem] sm:text-2xl bg-[#6E4618] z-20 rounded-[5rem] shrink-0"
         >
           Descargar Video
         </motion.button>
@@ -147,21 +182,21 @@ export default function App() {
         >
           Elenco:
         </motion.h1>
-        {creditos.map((item, index) => {
-        return (
-          <motion.p
-          key={index}
-            initial={{ scale: 0 }}
-            whileInView={{ scale: 1 }}
-            transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
-            viewport={{ once: true }}
-            className="text-[1.2rem] lg:text-3xl"
-          >
-            {item}
-          </motion.p>
-        );
-      })}
-        
+        {elenco.map((item, index) => {
+          return (
+            <motion.p
+              key={index}
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+              viewport={{ once: true }}
+              className="text-[1.2rem] lg:text-3xl"
+            >
+              {item}
+            </motion.p>
+          );
+        })}
+
         <motion.h1
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
@@ -169,29 +204,229 @@ export default function App() {
           viewport={{ once: true }}
           className="sm:mt-12 text-6xl sm:text-7xl lg:text-8xl"
         >
-          Música:
+          Colonos de Esperanza:
         </motion.h1>
         <motion.p
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >{`Banda Municipal - Cuarteto de cuerdas "De la cabeza"`}</motion.p>
+          className="text-[1.2rem] lg:text-3xl"
+        >
+          {`Miembros: "Asociación Alemana de Esperanza"`}
+        </motion.p>
+        <motion.h1
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="sm:mt-12 text-6xl sm:text-7xl lg:text-8xl"
+        >
+          {`Banda Municipal - "De la Cabeza" - cuarteto de cuerdas:`}
+        </motion.h1>
+
+        {bandaMunicipal.map((item, index) => {
+          return (
+            <motion.p
+              key={index}
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+              viewport={{ once: true }}
+              className="text-[1.2rem] lg:text-3xl"
+            >
+              {item}
+            </motion.p>
+          );
+        })}
+
+        <motion.h1
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="sm:mt-12 text-6xl sm:text-7xl lg:text-8xl"
+        >
+          Música Original de la Obra:
+        </motion.h1>
+        {musica.map((item, index) => {
+          return (
+            <motion.p
+              key={index}
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+              viewport={{ once: true }}
+              className="text-[1.2rem] lg:text-3xl"
+            >
+              {item}
+            </motion.p>
+          );
+        })}
+
+        <motion.h1
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="text-5xl sm:text-6xl lg:text-8xl"
+        >
+          Asistente de dirección y compilación de audios y sonidos
+        </motion.h1>
         <motion.p
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >{`Música original de la obra "ROMANCE DEL CEDRO AZUL"`}</motion.p>
+          className="uppercase text-3xl sm:text-3xl lg:text-4xl"
+        >
+          claudia gandino
+        </motion.p>
+
+        <motion.h1
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="text-5xl sm:text-6xl lg:text-8xl"
+        >
+          Vestuarista e Ideas Periféricas
+        </motion.h1>
         <motion.p
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="uppercase text-[1.2rem] lg:text-3xl"
-        >{`LETRA Y MÚSICA : cesar spais`}</motion.p>
+          className="uppercase text-3xl sm:text-3xl lg:text-4xl"
+        >
+          maximiliano rodríguez
+        </motion.p>
+
+        <motion.h1
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="text-5xl sm:text-6xl lg:text-8xl"
+        >
+          Grabación y Edición de Audios
+        </motion.h1>
+        <motion.p
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="uppercase text-3xl sm:text-3xl lg:text-4xl"
+        >
+          angel liris
+        </motion.p>
+
+        <motion.h1
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="text-5xl sm:text-6xl lg:text-8xl"
+        >
+          Asistente de Edición
+        </motion.h1>
+        <motion.p
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="uppercase text-3xl sm:text-3xl lg:text-4xl"
+        >
+          Claudia gandino
+        </motion.p>
+        <motion.p
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="text-3xl sm:text-3xl lg:text-4xl"
+        >
+          Los audios se editaron en los estudios de CSC y Fresh radio 2024
+        </motion.p>
+
+        <motion.h1
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="text-5xl sm:text-6xl lg:text-8xl"
+        >
+          Puesta en Escena:
+        </motion.h1>
+        <motion.p
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="uppercase text-3xl sm:text-3xl lg:text-4xl"
+        >
+          {`Grupo de Teatro Independiente - "DESCENDIENTES 1856"`}
+        </motion.p>
+
+        <motion.h1
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="sm:mt-12 text-6xl sm:text-7xl lg:text-8xl"
+        >
+          Voces en Off:
+        </motion.h1>
+
+        {vocesOff.map((item, index) => {
+          return (
+            <motion.p
+              key={index}
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+              viewport={{ once: true }}
+              className="text-[1.2rem] lg:text-3xl"
+            >
+              {item}
+            </motion.p>
+          );
+        })}
+
+        <motion.h1
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="text-5xl sm:text-6xl lg:text-8xl"
+        >
+          DG. Esmeralda Reffino
+        </motion.h1>
+
+        <motion.h1
+          initial={{ scale: 0 }}
+          whileInView={{ scale: 1 }}
+          transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="text-5xl sm:text-6xl lg:text-8xl"
+        >
+          Agradecimientos Especiales:
+        </motion.h1>
+        {agradecimiento.map((item, index) => {
+          return (
+            <motion.p
+              key={index}
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
+              viewport={{ once: true }}
+              className="uppercase text-3xl sm:text-3xl lg:text-4xl"
+            >
+              {item}
+            </motion.p>
+          );
+        })}
+
         <motion.h1
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
