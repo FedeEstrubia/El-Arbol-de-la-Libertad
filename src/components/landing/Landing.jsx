@@ -7,7 +7,7 @@ export default function App() {
       <img
         src="/BackgroundOldPapper.jpg"
         alt=""
-        className="hidden opacity-80 lg:flex fixed w-screen h-auto mt-[-150px] z-0"
+        className="hidden opacity-80 sm:flex fixed w-screen h-auto mt-[-150px] z-0"
       />
       <img
         src="/BackgroundOldPapper.png"
@@ -20,7 +20,7 @@ export default function App() {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ duration: 2, ease: "easeInOut", type: "spring" }}
-          className="text-[#6E4618] mt-4 sm:mt-0 text-[3.3rem] sm:text-9xl z-10"
+          className="text-[#6E4618] mt-4 sm:mt-0 text-[3.3rem] sm:text-6xl lg:text-9xl z-10"
         >
           El Árbol de la Libertad
         </motion.h1>
@@ -33,7 +33,7 @@ export default function App() {
             type: "spring",
             delay: 0.2,
           }}
-          className="text-[#5E3608] mt-[-1.5rem] text-[1.2rem] sm:text-2xl sm:mt-[-1rem] z-10"
+          className="text-[#5E3608] mt-[-1.5rem] text-[1.2rem] sm:text-lg lg:text-2xl sm:mt-[-1rem] z-10"
         >
           Sumergite en la verídica y conmovedora travesía de Alois y Magdalena,
           <br /> un amor que hizo historia.
@@ -49,7 +49,7 @@ export default function App() {
           type: "spring",
           ease: "easeInOut",
         }}
-        className="flex w-[90vw] h-[200px] mt-16 sm:w-[50vw] sm:h-[50vh] sm:mt-12 z-10 rounded-3xl overflow-hidden shrink-0"
+        className="flex w-[90vw] h-[200px] mt-16 sm:w-[70vw] sm:h-[80vh] sm:mt-0 lg:w-[50vw] lg:h-[50vh] lg:mt-12 z-10 rounded-3xl overflow-hidden shrink-0"
       >
         <ReactPlayer
           url="https://youtu.be/tgMrvOuU88g"
@@ -82,7 +82,7 @@ export default function App() {
             type: "spring",
             ease: "easeInOut",
           }}
-          className="text-2xl mt-12 sm:w-[15%] sm:h-[5rem] sm:mt-4 sm:text-2xl bg-[#7E5628] z-20 rounded-[5rem] shrink-0"
+          className="text-2xl mt-12 sm:w-[25%] lg:w-[15%] sm:h-[5rem] sm:mt-4 sm:text-2xl bg-[#7E5628] z-20 rounded-[5rem] shrink-0"
         >
           <a
             href="https://api.whatsapp.com/send?text=https%3A%2F%2Ftupagina.com"
@@ -105,14 +105,14 @@ export default function App() {
         whileInView={{ opacity: 1 }}
         transition={{ duration: 2 }}
         viewport={{ once: true }}
-        className="flex flex-col  w-[100%] mt-16 sm:w-[62vw] backdrop-blur-sm sm:mt-24 shrink-0 rounded-t-[4rem] sm:rounded-[3rem] p-8 gap-12 z-10"
+        className="flex flex-col  w-[100%] mt-16 sm:w-full lg:w-[62vw] backdrop-blur-sm sm:mt-24 shrink-0 rounded-t-[4rem] sm:rounded-[3rem] p-8 gap-12 z-10"
       >
         <motion.h1
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="text-5xl sm:text-8xl"
+          className="text-5xl sm:text-6xl lg:text-8xl"
         >
           Idea, Libreto, Dirección y Producción:
         </motion.h1>
@@ -121,7 +121,7 @@ export default function App() {
           whileInView={{ scale: 1 }}
           transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="uppercase text-3xl sm:text-4xl"
+          className="uppercase text-3xl sm:text-3xl lg:text-4xl"
         >
           roberto massi
         </motion.p>
@@ -130,7 +130,7 @@ export default function App() {
           whileInView={{ scale: 1 }}
           transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="mt-4 sm:mt-12 text-6xl sm:text-8xl"
+          className="mt-4 sm:mt-12 text-6xl sm:text-7xl lg:text-8xl"
         >
           Actores:
         </motion.h1>
@@ -274,7 +274,7 @@ export default function App() {
           whileInView={{ scale: 1 }}
           transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="sm:mt-12 text-6xl sm:text-8xl"
+          className="sm:mt-12 text-6xl sm:text-7xl lg:text-8xl"
         >
           Música:
         </motion.h1>
@@ -304,10 +304,10 @@ export default function App() {
           whileInView={{ scale: 1 }}
           transition={{ duration: 1, type: "spring", ease: "easeInOut" }}
           viewport={{ once: true }}
-          className="mt-4 sm:mt-12 text-5xl text-[#4E2600]"
+          className="mt-4 sm:mt-12 text-5xl sm:text-7xl text-[#4E2600] sm:text-[#6E4618]"
         >
           Filmación ad honorem por{" "}
-          <span className="text-6xl">Nestor Estrubia</span>{" "}
+          <span className="text-6xl sm:text-7xl">Nestor Estrubia</span>{" "}
         </motion.h1>
       </motion.div>
     </div>
